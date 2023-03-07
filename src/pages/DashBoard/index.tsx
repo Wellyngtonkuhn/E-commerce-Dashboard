@@ -1,10 +1,12 @@
+import { Outlet } from "react-router-dom";
+import SideMenu from "../../components/SideMenu";
+import { MainDashBoard } from "./style";
 
 export default function DashBoard() {
   return (
-   <>
-    <h1>Side Menu</h1>
-
-    <h1>Content</h1>
-   </>
+    <MainDashBoard>
+      <SideMenu />
+      <Outlet />
+    </MainDashBoard>
   )
 }
