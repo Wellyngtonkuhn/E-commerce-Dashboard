@@ -1,7 +1,10 @@
+import { InitialContentSection } from "./style";
 
 
 export default function Initial() {
   return (
-    <div>Initial Content</div>
+    <InitialContentSection>
+      <h1>Initial Content</h1>
+    </InitialContentSection>
   )
 }
