@@ -2,11 +2,14 @@ import React, { useState } from "react";
 import { ThemeProvider } from "styled-components";
 import { Route, Routes } from "react-router-dom";
 import ProtectedRoutes from "./ProtectedRoutes";
-import DashBoard from "../pages/DashBoard";
 import Login from "../pages/Login";
+
+import DashBoard from "../pages/DashBoard";
+import Initial from "../components/Initial";
 import NewProduct from "../components/Products/NewProduct";
 import AllProducts from "../components/Products/AllProducts";
-import Initial from "../components/Initial";
+import Orders from "../components/Orders";
+import Users from "../components/Users";
 
 import { lightTheme } from "../styles/theme/light";
 import { darkTheme } from "../styles/theme/dark";
@@ -21,8 +24,8 @@ const Router: React.FC = () => {
           <Route path="/" element={<Initial />} />
           <Route path="new-product" element={<NewProduct />} />
           <Route path="products" element={<AllProducts />} />
-          <Route path="orders" element={<h1>Orders</h1>} />
-          <Route path="users" element={<h1>Users</h1>} />
+          <Route path="orders" element={<Orders />} />
+          <Route path="users" element={<Users />} />
         </Route>
 
         <Route path="/login" element={<Login />} />

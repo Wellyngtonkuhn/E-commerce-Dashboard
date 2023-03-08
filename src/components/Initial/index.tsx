@@ -1,10 +1,10 @@
-import { InitialContentSection } from "./style";
+import { DashboardContentContainer } from "../../styles/DefaultStyles/DashboardContentContainer"
 
 
 export default function Initial() {
   return (
-    <InitialContentSection>
+    <DashboardContentContainer>
       <h1>Initial Content</h1>
-    </InitialContentSection>
+    </DashboardContentContainer>
   )
 }

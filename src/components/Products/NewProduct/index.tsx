@@ -1,7 +1,9 @@
-import React from 'react'
+import { DashboardContentContainer } from '../../../styles/DefaultStyles/DashboardContentContainer'
 
 export default function NewProduct() {
   return (
-    <div>NewProduct</div>
+    <DashboardContentContainer>
+      NewProduct
+    </DashboardContentContainer>
   )
 }

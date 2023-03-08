@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { SideMenuSection, Nav, Ul } from "./style";
 
@@ -7,7 +7,9 @@ import { FaBars, FaTh, FaFolder, FaBook, FaFolderOpen, FaFolderPlus, FaUser } fr
 export default function SideMenu() {
   const [openMenu, setOpenMenu] = useState(false)
   const [showDropDown, setShowDropDown] = useState(false)
-  
+  const [screenWidth, setScreenWidth] = useState<number>()
+
+
   const handleDropDown = () => {
     setShowDropDown(!showDropDown)
     setOpenMenu(true)
@@ -19,9 +21,16 @@ export default function SideMenu() {
   }
 
   const handleCloseMenu = () => {
-    setOpenMenu(false)
-    setShowDropDown(false)
+    if(screenWidth as number < 1024 ){
+      setOpenMenu(false)
+      setShowDropDown(false)
+    }
+    return
   }
+
+  useEffect(() => {
+    setScreenWidth(window.screen.width)
+  }, [])
 
   return (
       <SideMenuSection>

@@ -3,6 +3,7 @@ import { createGlobalStyle } from "styled-components";
 export const GlobalStyles = createGlobalStyle`
     :root{
         font-size: 16px;
+        font-family: 'Roboto', sans-serif;
     }
 
     body{

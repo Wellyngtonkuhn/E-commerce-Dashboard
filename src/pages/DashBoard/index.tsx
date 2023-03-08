@@ -1,15 +1,15 @@
 import { Outlet } from "react-router-dom";
 import SideMenu from "../../components/SideMenu";
-import { ContainerLayOut } from "../../styles/ContainerLayOut";
+import { Container } from "./style";
 import { MainDashBoard } from "./style";
 
 export default function DashBoard() {
   return (
     <MainDashBoard>
-      <ContainerLayOut>
+      <Container>
         <SideMenu />
         <Outlet />
-      </ContainerLayOut>
+      </Container>
     </MainDashBoard>
   )
 }

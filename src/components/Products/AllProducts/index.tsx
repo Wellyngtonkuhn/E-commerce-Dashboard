@@ -1,7 +1,10 @@
-import React from 'react'
+import { DashboardContentContainer } from "../../../styles/DefaultStyles/DashboardContentContainer";
+
 
 export default function AllProducts() {
   return (
-    <div>AllProducts</div>
+    <DashboardContentContainer>
+      All Products
+    </DashboardContentContainer>
   )
 }
