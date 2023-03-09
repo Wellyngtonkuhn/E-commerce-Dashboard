@@ -8,5 +8,4 @@ export const MainDashBoard = styled.main`
 `;
 
 export const Container = styled.div`
-    
 `;

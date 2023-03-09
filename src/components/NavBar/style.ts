@@ -8,6 +8,10 @@ export const NavBarSection = styled.nav`
   top: 0;
   left: 0;
   z-index: 1;
+
+  @media screen and (min-width: 1024px) {
+    height: 3.5rem;
+  }
 `;
 
 export const Content = styled.div`
@@ -44,8 +48,16 @@ export const Content = styled.div`
       font-size: 1rem;
     }
 
-    @media screen and (min-width: 1024px){
-      button:hover{
+    @media screen and (min-width: 1024px) {
+      h1 {
+        font-size: 2.5rem;
+      }
+
+      h3 {
+      font-size: 1rem;
+    }
+
+      button:hover {
         cursor: pointer;
       }
     }

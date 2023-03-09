@@ -1,16 +1,13 @@
 import styled from "styled-components";
 
-
 export const DashboardContentContainer = styled.section`
-    width: 80%;
-    min-height: 50vh;
-    position: absolute;
-    right: 0;
-    border-radius: 10px;
-    background-color: #fff;
+  width: 80%;
+  min-height: 50vh;
+  border-radius: 10px;
+  margin-left: 4.5rem;
 
-
-    @media screen and (min-width: 768px){
-        width: 85%;
-    }
-`
+  @media screen and (min-width: 768px) {
+    width: 85%;
+    margin: auto;
+  }
+`;

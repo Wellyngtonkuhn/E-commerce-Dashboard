@@ -8,6 +8,7 @@ import DashBoard from "../pages/DashBoard";
 import Initial from "../components/Initial";
 import NewProduct from "../components/Products/NewProduct";
 import AllProducts from "../components/Products/AllProducts";
+import SingleProduct from "../components/Products/SingleProduct";
 import Orders from "../components/Orders";
 import Users from "../components/Users";
 
@@ -24,6 +25,7 @@ const Router: React.FC = () => {
           <Route path="/" element={<Initial />} />
           <Route path="new-product" element={<NewProduct />} />
           <Route path="products" element={<AllProducts />} />
+          <Route path="products/:id" element={<SingleProduct />} />
           <Route path="orders" element={<Orders />} />
           <Route path="users" element={<Users />} />
         </Route>

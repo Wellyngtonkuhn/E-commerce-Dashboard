@@ -21,11 +21,8 @@ export default function SideMenu() {
   }
 
   const handleCloseMenu = () => {
-    if(screenWidth as number < 1024 ){
-      setOpenMenu(false)
-      setShowDropDown(false)
-    }
-    return
+    setOpenMenu(false)
+    setShowDropDown(false)
   }
 
   useEffect(() => {
@@ -42,10 +39,10 @@ export default function SideMenu() {
           {showDropDown && (
             <Ul>
               <li>
-                <Link to='products' onClick={() => handleCloseMenu()}><FaFolderOpen /> All Products</Link>
+                <Link to='new-product' onClick={() => handleCloseMenu()}><FaFolderPlus /> Add New</Link>
               </li>
               <li>
-                <Link to='new-product' onClick={() => handleCloseMenu()}><FaFolderPlus /> Add New</Link>
+                <Link to='products' onClick={() => handleCloseMenu()}><FaFolderOpen /> All Products</Link>
               </li>
             </Ul>
           )}

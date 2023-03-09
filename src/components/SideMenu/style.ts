@@ -30,7 +30,6 @@ export const Nav = styled.nav`
     align-items: center;
     gap: 0.5rem;
     font-size: 0.9rem;
-    font-size: 0.9rem;
     color: ${({ theme }) => theme.color};
   }
 
@@ -39,8 +38,16 @@ export const Nav = styled.nav`
   }
 
   @media screen and (min-width: 1024px) {
+    a, button{
+      font-size: 1rem;
+    }
+
     a, button:hover{
       cursor: pointer;
+    }
+
+    svg{
+      font-size: 1.3rem;
     }
   }
 `;
